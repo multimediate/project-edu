@@ -10,17 +10,17 @@ import { mount } from 'react-mounter'
 import AppContainer from '../../ui/containers/app_container'
 
 //Layouts
-import { AppLayout } from '../../ui/layouts/app_layout'
+// import { AppLayout } from '../../ui/layouts/app_layout'
 
 // Pages
 import { Homepage } from '../../ui/pages/homepage'
-import { Scholarships } from '../../ui/pages/scholarships'
+import Scholarships from '../../ui/pages/scholarships'
 
 FlowRouter.route('/', {
   name: 'homepage',
   action() {
     mount(AppContainer, {
-      content: (props) => <Homepage {...props} />
+      content: <Homepage />
     })
   }
 })
@@ -29,7 +29,7 @@ FlowRouter.route('/scholarships', {
   name: 'scholarships',
   action() {
     mount(AppContainer, {
-      content: (props) => <Scholarships {...props} />
+      content: <Scholarships />
     })
   }
 })
