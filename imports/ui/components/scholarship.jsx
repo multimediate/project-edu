@@ -1,28 +1,34 @@
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import PropTypes from 'prop-types';
+
+import { Grid, Row, Col } from 'bootstrap';
  
 // Scholarship component - represents a single scholarship item
 export default class Scholarship extends Component {
   render() {
     return (
-    	<div className="item">
-				<div className="image">
-					<img src="/images/wireframe/image.png" />
-				</div>
-				<div className="content">
-					<a className="header">{this.props.scholarship.header}</a>
-					<div className="meta">
-						<span>{this.props.scholarship.description}</span>
+	  	<Grid>
+			<Row>
+				<Col xs={12} md={8}>
+					<div className="">
+						<img src="/images/wireframe/image.png" />
 					</div>
-					<div className="description">
-						<p>{this.props.scholarship.description}</p>
+					<div className="">
+						<a className="">{this.props.scholarship.header}</a>
+						<div className="">
+							<span>{this.props.scholarship.description}</span>
+						</div>
+						<div className="">
+							<p>{this.props.scholarship.description}</p>
+						</div>
+						<div className="">
+							Additional Details
+						</div>
 					</div>
-					<div className="extra">
-						Additional Details
-					</div>
-				</div>
-		  </div>
+				</Col>
+			</Row>
+		</Grid>
     );
   }
 }
@@ -32,3 +38,21 @@ Scholarship.propTypes = {
   // We can use propTypes to indicate it is required
   scholarship: PropTypes.object.isRequired,
 };
+
+    // 	<div className="">
+				// <div className="">
+				// 	<img src="/images/wireframe/image.png" />
+				// </div>
+				// <div className="">
+				// 	<a className="">{this.props.scholarship.header}</a>
+				// 	<div className="">
+				// 		<span>{this.props.scholarship.description}</span>
+				// 	</div>
+				// 	<div className="">
+				// 		<p>{this.props.scholarship.description}</p>
+				// 	</div>
+				// 	<div className="extra">
+				// 		Additional Details
+				// 	</div>
+				// </div>
+		  // </div>

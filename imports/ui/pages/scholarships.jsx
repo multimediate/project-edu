@@ -22,11 +22,11 @@ export default class Scholarships extends Component {
  
   render() {
     return (
-      <div className="ui container">
+      <div className="container">
         <header>
           <h1>Scholarships</h1>
         </header>
-        <div className="ui items">
+        <div className="">
           {this.renderScholarships()}
         </div>
       </div>

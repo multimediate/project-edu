@@ -24,6 +24,10 @@ react-meteor-data
 accounts-password@1.3.6
 accounts-ui@1.1.9
 shell-server
-semantic:ui
 less
 juliancwirko:postcss
+fourseven:scss
+# coursierprive:bootstrap4-flex
+# coursierprive:tether
+# robomagnus:bootstrap4-sass
+universe:react-bootstrap
